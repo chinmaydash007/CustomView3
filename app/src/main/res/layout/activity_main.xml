@@ -3,22 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data class="MainActivityBinding">
+    <data class="MainActivity2Binding">
 
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".activity.MainActivity2">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/reyclerview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+        <com.example.customview3.customview.SquareView
+            android:id="@+id/squareView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:square_color="#F1E95E"
+            app:square_size="200dp"  />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

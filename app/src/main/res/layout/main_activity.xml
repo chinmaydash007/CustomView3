@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="MainActivityBinding">
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MainActivity">
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:max="100"
+            android:progress="50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.customview3.customview.MyView
+            android:id="@+id/myView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seekbar" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="272dp"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <com.example.customview3.customview.ValueSelector
+            android:id="@+id/valueSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/updateButton"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_margin="@dimen/updateButtonMargin"-->
+        <!--            android:layout_marginTop="16dp"-->
+        <!--            android:text="Update"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/valueBar" />-->
+
+        <!--        <com.example.customview3.customview.ValueBar-->
+        <!--            android:id="@+id/valueBar"-->
+        <!--            custom:barHeight="@dimen/value_bar_barHeight"-->
+        <!--            custom:baseColor="@color/navy"-->
+        <!--            custom:circleRadius="@dimen/value_bar_circleRadius"-->
+        <!--            custom:circleTextColor="@color/white"-->
+        <!--            custom:circleTextSize="@dimen/value_bar_circleTextSize"-->
+        <!--            custom:fillColor="@color/red"-->
+        <!--            custom:labelText="@string/valueBarLabel"-->
+        <!--            custom:labelTextColor="@color/navy"-->
+        <!--            custom:labelTextSize="@dimen/value_bar_labelTextSize"-->
+        <!--            custom:maxValueTextColor="@color/navy"-->
+        <!--            custom:maxValueTextSize="@dimen/value_bar_maxValueTextSize"-->
+        <!--            custom:spaceAfterBar="@dimen/value_bar_spaceAfterBar"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:paddingLeft="@dimen/value_bar_padding_horizontal"-->
+        <!--            android:paddingTop="@dimen/value_bar_padding_top"-->
+        <!--            android:paddingRight="@dimen/value_bar_padding_horizontal"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/button" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
